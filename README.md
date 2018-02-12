@@ -23,5 +23,5 @@ USER INTERACTIONS
  SPACE_KEY	game: jump.
  ECHAP_KEY	menu/game:quit the game.
 
-Graphic project with the CSFML library
+Graphic project with the CSFML library\n
 Made by Joseph Chartois
