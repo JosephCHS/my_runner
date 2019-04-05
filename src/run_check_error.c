@@ -48,10 +48,12 @@ int	check_missing_files(void)
 	while (idx != 11) {
 		fd = open(array_path[idx], O_RDONLY);
 		if (fd == -1) {
+			free(array_path);
 			return (84);
 		}
 		idx++;
 	}
+	free(array_path);
 	return (0);
 }
 
