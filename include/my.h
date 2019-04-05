@@ -87,17 +87,17 @@ void	draw_sprite_game(t_glob *, t_game1 *);
 t_game1	*set_game(t_glob *);
 t_game1	*set_game_texture(t_game1 *);
 //run_help.c
-int	print_the_usage(int, char **, char **);
+int		print_the_usage(int, char **, char **);
 //my_putstr.c
 void	my_putchar(char);
 void	my_putstr(char *);
 //run_check_error.c
-int	check_error(int, char **, char **);
-int	wrong_av1(char *);
-int	check_missing_files(void);
-int	no_env(char **);
+int		check_error(int, char **, char **);
+int		wrong_av1(char *);
+int		check_missing_files(void);
+int		no_env(char **);
 //my_strcmp.c
-int	my_strcmp(char const *, char const *);
+int		my_strcmp(char const *, char const *);
 //run_init_array.c
 char	**init_array_wrong_av1(void);
 char	**init_array_path(void);
@@ -113,9 +113,9 @@ void	gestion_move_parallax(t_game1 *);
 //run_load_clock_music.c
 void	load_clock_music(t_game1 *);
 //run_ennemy.c
-int	gestion_move_ennemy(t_game1 *, sfIntRect *);
+int		gestion_move_ennemy(t_game1 *, sfIntRect *);
 void	move_game_ennemy(sfIntRect *);
-int	reset_en_pos(t_game1 *);
+int		reset_en_pos(t_game1 *);
 //run_set_struct.c
 void	set_struct_game1(t_game1 *, t_glob *);
 void	re_set_struct(t_glob *);
@@ -138,7 +138,7 @@ void	my_put_nbr(int);
 //run_map.c
 void	check_map(t_game1 *, char *);
 void	map_gestion(t_game1 *);
-int	use_map(t_game1 *);
+int		use_map(t_game1 *);
 //my_put_error_str.c
 void	my_err_putchar(char);
 void	my_err_putstr(char *);

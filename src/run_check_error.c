@@ -31,10 +31,13 @@ int	wrong_av1(char *av)
 
 	array_wrong_av1 = init_array_wrong_av1();
 	while (idx != 3) {
-		if (my_strcmp(av, array_wrong_av1[idx]) == 0)
+		if (my_strcmp(av, array_wrong_av1[idx]) == 0) {
+			free(array_wrong_av1);
 			return (0);
+		}
 		idx++;
 	}
+	free(array_wrong_av1);
 	return (84);
 }
 

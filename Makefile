@@ -37,7 +37,7 @@ CFLAGS	=	-W -Wall -Wextra $(HDR)
 
 NAME	=	my_runner
 
-LDFLAGS =	-lc_graph_prog
+LDFLAGS =	-lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio
 
 CC	=	gcc
 

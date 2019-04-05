@@ -40,6 +40,7 @@ void	game_destroy2(t_game1 *game1_l)
 	sfText_destroy(game1_l->txt_game_l1);
 	sfText_destroy(game1_l->txt_game_l2);
 	sfFont_destroy(game1_l->font_game);
+	sfClock_destroy(game1_l->game_clock);
 	free(game1_l);
 }
 

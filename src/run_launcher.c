@@ -7,6 +7,12 @@
 
 #include "my.h"
 
+static void destroy_glob(t_glob *glob)
+{
+	sfClock_destroy(glob->score_clock);
+	free(glob);
+}
+
 void	launcher_of_phase(char *av)
 {
 	t_glob *glob = malloc(sizeof(t_glob));
@@ -25,5 +31,5 @@ void	launcher_of_phase(char *av)
 		}
 	}
 	sfRenderWindow_destroy(glob->window);
-	free(glob);
+	destroy_glob(glob);
 }
