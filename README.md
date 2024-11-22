@@ -25,5 +25,3 @@ Theme Zelda
 * ECHAP_KEY	menu/game:quit the game.
 
 Graphic project with the CSFML library
-
-Made by Joseph Chartois
